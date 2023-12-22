@@ -2760,9 +2760,9 @@ input::-moz-focus-inner {
 .item-folio {
   text-align: center;
   padding: 50px;
-  background-color: #494545;
+  background-color: #000000;
   transition: all 0.1s ease-in-out;
-  border-radius: 10px;
+  border-radius: 16px;
 }
 
 /* item-folio thumb
@@ -2817,6 +2817,7 @@ input::-moz-focus-inner {
 
 .item-folio__thumb img {
   vertical-align: bottom;
+  border-radius: 10px;
 }
 
 .item-folio__thumb .item-folio__project-link {
