@@ -2759,7 +2759,7 @@ input::-moz-focus-inner {
 
 .item-folio {
   text-align: center;
-  padding: 50px;
+  padding: 10px;
   background-color: #000000;
   transition: all 0.1s ease-in-out;
   border-radius: 16px;
@@ -2817,7 +2817,7 @@ input::-moz-focus-inner {
 
 .item-folio__thumb img {
   vertical-align: bottom;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .item-folio__thumb .item-folio__project-link {
@@ -2853,7 +2853,7 @@ input::-moz-focus-inner {
 /* item-folio text
  * ------------------------------------------------ */
 .item-folio__text {
-  margin-top: 8.92%;
+  margin-top: 2.2%;
 }
 
 .item-folio__text,
@@ -2902,7 +2902,7 @@ input::-moz-focus-inner {
   }
 
   .item-folio {
-    padding: 48px;
+    padding: 12px;
   }
 
   .item-folio__thumb .thumb-link::after {
@@ -2924,24 +2924,24 @@ input::-moz-focus-inner {
 
 @media screen and (max-width:1024px) {
   .masonry__brick {
-    padding: 0 20px;
+    padding: 0 12px;
     margin-bottom: 40px;
   }
 
   .item-folio {
-    padding: 40px;
+    padding: 12px;
   }
 
 }
 
 @media screen and (max-width:900px) {
   .masonry__brick {
-    padding: 0 16px;
+    padding: 0 12px;
     margin-bottom: 32px;
   }
 
   .item-folio {
-    padding: 32px;
+    padding: 12px;
   }
 
 }
@@ -2966,7 +2966,7 @@ input::-moz-focus-inner {
   }
 
   .item-folio {
-    padding: 8.92% 8.92% 8.92%;
+    padding: 2.92% 2.92% 2.92%;
   }
 
   .item-folio__thumb .thumb-link::after {
@@ -2989,12 +2989,12 @@ input::-moz-focus-inner {
 @media screen and (max-width:600px) {
   .masonry-wrap {
     width: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
   .masonry__brick {
-    padding: 0 10px;
+    padding: 0 12px;
     margin-bottom: 44px;
   }
 
