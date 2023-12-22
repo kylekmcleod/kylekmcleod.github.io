@@ -2760,7 +2760,7 @@ input::-moz-focus-inner {
 .item-folio {
   text-align: center;
   padding: 50px;
-  background-color: #000000;
+  background-color: #494545;
   transition: all 0.1s ease-in-out;
   border-radius: 10px;
 }
@@ -3428,7 +3428,10 @@ input::-moz-focus-inner {
   .contact-social ul li::before {
     display: none;
   }
-
+  .contact-email {
+    font-size: 6vw; /* Adjust font size for smaller screens */
+    margin: 3rem 0 4rem; /* Adjust margin as needed */
+  }
 }
 
 @media screen and (max-width:400px) {
