@@ -28,8 +28,7 @@
  * # imports 
  *
  * ------------------------------------------------------------------- */
-@import url("https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:400,500|Lora:400,400i,700,700i|Roboto:300,400,500,600,700");
-@import url("font-awesome/css/fontawesome-all.css");
+@import url('https://fonts.cdnfonts.com/css/argentum-sans');
 
 
 /* ==========================================================================
@@ -86,7 +85,7 @@ hr {
 /* 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers. */
 pre {
-	font-family: monospace, monospace;  /* 1 */
+	font-family: 'Argentum Sans', sans-serif;
 	font-size: 1em;  /* 2 */
 }
 
