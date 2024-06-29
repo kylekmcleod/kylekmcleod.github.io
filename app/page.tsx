@@ -4,7 +4,6 @@ import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon, LinkedinIcon } from "@/components/icons";
 import Projects from "@/components/projects";
-
 export default function Home() {
   return (
     <section className="flex flex-col md:flex-row items-center justify-center gap-4 py-8 md:py-10">
