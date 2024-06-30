@@ -30,9 +30,17 @@ export default function TechStack() {
   );
 }
 
-// Tech Stack Button Component
 const TechStackButton = ({ label }: { label: string }) => (
-  <Snippet hideCopyButton symbol="" variant="bordered" className="py-2 px-3 mt-2" style={{ marginRight: '4px', marginLeft: '4px'}}>
+  <Snippet
+    hideCopyButton
+    symbol=""
+    variant="bordered"
+    className="py-2 px-3 mt-2 transition-transform duration-200 ease-in-out transform hover:scale-105 hover:text-blue-500 hover:border-blue-500 cursor-default"
+    style={{ marginRight: '4px', marginLeft: '4px' }}
+  >
     {label}
   </Snippet>
 );
+
+
+
