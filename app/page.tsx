@@ -5,6 +5,7 @@ import { title, subtitle } from "@/components/primitives";
 import { GithubIcon, LinkedinIcon } from "@/components/icons";
 import Projects from "@/components/projects";
 import TechStack from "@/components/techStack";
+import {Divider} from "@nextui-org/divider";
 
 export default function Home() {
   return (
@@ -50,9 +51,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-3 mb-8">
+        <div className="mt-3 mb-12">
           <TechStack />
         </div>
+
         {/* Projects */}
         <div className="text-left">
           <div className="inline-block pt-12">
@@ -60,10 +62,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-3 mb-8">
+        <div className="mt-3 mb-12">
           <Projects />
         </div>
-
       </div>
     </section>
   );
