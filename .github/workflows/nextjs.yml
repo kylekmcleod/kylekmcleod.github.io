@@ -48,7 +48,8 @@ jobs:
             ${{ runner.os }}-nextjs-
 
       - name: Install dependencies
-        run: ${{ steps.detect-package-manager.outputs.manager }} install --frozen-lockfile
+        run: ${{ steps.detect-package-manager.outputs.manager }} install --no-audit
+
 
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.manager }} run build
