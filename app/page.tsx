@@ -14,7 +14,7 @@ export default function Home() {
         {/* Introduction */}
         <div className="text-center">
           <div className="inline-block">
-            <h1 className={title()}>Hey, I'm&nbsp;</h1>
+            <h1 className={title()}>Hey, I&apos;m&nbsp;</h1>
             <h1 className={title({ color: "blue" })}>Kyle McLeod.&nbsp;</h1>
             <br />
             <h2 className={subtitle({ class: "mt-4" })}>
