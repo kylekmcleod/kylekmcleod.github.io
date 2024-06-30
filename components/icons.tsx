@@ -90,7 +90,7 @@ export const GithubIcon: React.FC<IconSvgProps> = ({
 };
 
 export const LinkedinIcon: React.FC<IconSvgProps> = ({
-  size = 22,
+  size = 24,
   width,
   height,
   ...props
@@ -102,7 +102,7 @@ export const LinkedinIcon: React.FC<IconSvgProps> = ({
       width={size || width}
       {...props}
     >
-      <g transform="scale(0.85, -0.85) translate(0, -5120)">
+      <g transform="scale(0.87, -0.87) translate(0, -5500)">
         <path
           clipRule="evenodd"
           d="M2321 5110 c-1340 -130 -2361 -1283 -2318 -2620 13 -389 97 -726 268
