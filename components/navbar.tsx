@@ -23,6 +23,7 @@ import {
   HeartFilledIcon,
   SearchIcon,
   Logo,
+  LinkedinIcon,
 } from "@/components/icons";
 
 export const Navbar = () => {
@@ -59,14 +60,11 @@ export const Navbar = () => {
         justify="end"
       >
         <NavbarItem className="hidden sm:flex gap-2">
-          <Link isExternal aria-label="Twitter" href={siteConfig.links.twitter}>
-            <TwitterIcon className="text-default-500" />
-          </Link>
-          <Link isExternal aria-label="Discord" href={siteConfig.links.discord}>
-            <DiscordIcon className="text-default-500" />
-          </Link>
           <Link isExternal aria-label="Github" href={siteConfig.links.github}>
             <GithubIcon className="text-default-500" />
+          </Link>
+          <Link isExternal aria-label="LinkedIn" href={siteConfig.links.linkedin}>
+            <LinkedinIcon className="text-default-500" />
           </Link>
           <ThemeSwitch />
         </NavbarItem>
@@ -75,6 +73,9 @@ export const Navbar = () => {
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
         <Link isExternal aria-label="Github" href={siteConfig.links.github}>
           <GithubIcon className="text-default-500" />
+        </Link>
+        <Link isExternal aria-label="LinkedIn" href={siteConfig.links.linkedin}>
+          <LinkedinIcon className="text-default-500" />
         </Link>
         <ThemeSwitch />
         <NavbarMenuToggle />
