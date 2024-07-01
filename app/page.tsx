@@ -45,7 +45,7 @@ export default function Home() {
         </div>
 
         {/* Tech Stack */}
-        <div className="text-left">
+        <div className="text-left" id = "tech-stack">
           <div className="inline-block pt-12">
             <h2 className={title()}>Tech Stack</h2>
           </div>
@@ -56,7 +56,7 @@ export default function Home() {
         </div>
 
         {/* Projects */}
-        <div className="text-left">
+        <div className="text-left" id = "projects">
           <div className="inline-block pt-12">
             <h2 className={title()}>Projects</h2>
           </div>
