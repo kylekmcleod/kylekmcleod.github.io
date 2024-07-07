@@ -20,7 +20,7 @@ export default function Home() {
             <h1 className={title({ color: "blue" })}>Kyle McLeod.&nbsp;</h1>
             <br />
             <h2 className={subtitle({ class: "mt-4" })}>
-              Computer science student at UBCO and striving to become a software developer.
+              I am a computer science student at UBCO and am striving to become a software developer.
             </h2>
           </div>
 
