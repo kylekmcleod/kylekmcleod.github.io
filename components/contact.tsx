@@ -18,7 +18,7 @@ function ContactForm() {
           id="firstName" 
           variant='bordered' 
           label="First Name" 
-          placeholder="Enter your first name" 
+          placeholder="Enter your name" 
           fullWidth 
         />
         <ValidationError 
@@ -32,7 +32,7 @@ function ContactForm() {
           id="lastName" 
           variant='bordered' 
           label="Last Name" 
-          placeholder="Enter your last name" 
+          placeholder="Enter last name" 
           fullWidth 
         />
         <ValidationError 
@@ -47,7 +47,7 @@ function ContactForm() {
         id="email" 
         variant='bordered' 
         label="Email" 
-        placeholder="Enter your email" 
+        placeholder="Enter email" 
       />
       <ValidationError 
         prefix="Email" 
@@ -59,7 +59,7 @@ function ContactForm() {
         name="message"
         id="message"
         variant="bordered"
-        placeholder="Enter your message"
+        placeholder="Enter message"
         disableAnimation
         disableAutosize
         classNames={{
