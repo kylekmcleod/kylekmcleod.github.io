@@ -18,7 +18,7 @@ function ContactForm() {
           id="firstName" 
           variant='bordered' 
           label="First Name" 
-          placeholder="Enter your name" 
+          placeholder="Enter first name" 
           fullWidth 
         />
         <ValidationError 
@@ -47,7 +47,7 @@ function ContactForm() {
         id="email" 
         variant='bordered' 
         label="Email" 
-        placeholder="Enter email" 
+        placeholder="Enter your email" 
       />
       <ValidationError 
         prefix="Email" 
