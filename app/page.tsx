@@ -5,6 +5,7 @@ import { title, subtitle } from "@/components/primitives";
 import { GithubIcon, LinkedinIcon } from "@/components/icons";
 import Projects from "@/components/projects";
 import TechStack from "@/components/techStack";
+import ContactForm from "@/components/contact";
 import {Divider} from "@nextui-org/divider";
 
 export default function Home() {
@@ -65,6 +66,18 @@ export default function Home() {
         <div className="mt-3 mb-12">
           <Projects />
         </div>
+
+        {/* Contact */}
+        <div className="text-left" id = "projects">
+          <div className="inline-block pt-12">
+            <h2 className={title()}>Contact Me</h2>
+          </div>
+        </div>
+
+        <div className="mt-3 mb-12">
+          <ContactForm />
+        </div>
+
       </div>
     </section>
   );
