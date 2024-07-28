@@ -13,7 +13,7 @@ export default function Home() {
         <div className="w-full px-4">
           {/* Introduction */}
           <div className="relative min-h-[calc(100vh-150px)] bg-base-200 text-center flex items-center justify-center mb-20">
-          <div className="relative z-10 inline-block w-2/3"> {/* Narrowed div */}
+          <div className="relative z-10 inline-block"> 
 
 
               <h1 className={title()}>Hey, I&apos;m&nbsp;</h1>
