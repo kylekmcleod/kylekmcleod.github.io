@@ -6,79 +6,79 @@ import { GithubIcon, LinkedinIcon } from "@/components/icons";
 import Projects from "@/components/projects";
 import TechStack from "@/components/techStack";
 import ContactForm from "@/components/contact";
-import {Divider} from "@nextui-org/divider";
-
 export default function Home() {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-center gap-4 py-8 md:py-10">
-      <div className="w-full px-4">
+    <>
+      <section className="flex flex-col md:flex-row items-center justify-center gap-4">
+        <div className="w-full px-4">
+          {/* Introduction */}
+          <div className="relative min-h-[calc(100vh-150px)] bg-base-200 text-center flex items-center justify-center mb-20">
+          <div className="relative z-10 inline-block w-2/3"> {/* Narrowed div */}
 
-        {/* Introduction */}
-        <div className="text-center">
-          <div className="inline-block">
-            <h1 className={title()}>Hey, I&apos;m&nbsp;</h1>
-            <h1 className={title({ color: "blue" })}>Kyle McLeod.&nbsp;</h1>
-            <br />
-            <h2 className={subtitle({ class: "mt-4" })}>
-              I am a computer science student at UBCO and am striving to become a software developer.
-            </h2>
+
+              <h1 className={title()}>Hey, I&apos;m&nbsp;</h1>
+              <h1 className={title({ color: "blue" })}>Kyle McLeod.&nbsp;</h1>
+              <br />
+              <h2 className={subtitle({ class: "mt-4" })}>
+                I am a computer science student at UBCO and am striving to become a software developer.
+              </h2>
+              <div className="flex gap-3 mt-4 justify-center">
+                <Link
+                  isExternal
+                  className={buttonStyles({ variant: "bordered", radius: "full" })}
+                  href={siteConfig.links.github}
+                >
+                  <GithubIcon size={20} />
+                  GitHub
+                </Link>
+
+                <Link
+                  isExternal
+                  className={buttonStyles({ variant: "bordered", radius: "full" })}
+                  href={siteConfig.links.linkedin}
+                >
+                  <LinkedinIcon size={20} />
+                  LinkedIn
+                </Link>
+              </div>
+            </div>
           </div>
 
-          <div className="flex gap-3 mt-4 justify-center">
-            <Link
-              isExternal
-              className={buttonStyles({ variant: "bordered", radius: "full" })}
-              href={siteConfig.links.github}
-            >
-              <GithubIcon size={20} />
-              GitHub
-            </Link>
-
-            <Link
-              isExternal
-              className={buttonStyles({ variant: "bordered", radius: "full" })}
-              href={siteConfig.links.github}
-            >
-              <LinkedinIcon size={20} />
-              LinkedIn
-            </Link>
+          {/* Tech Stack */}
+          <div className="text-left" id="tech-stack">
+            <div className="inline-block pt-12">
+              <h2 className={title()}>Tech Stack</h2>
+            </div>
           </div>
-        </div>
 
-        {/* Tech Stack */}
-        <div className="text-left" id = "tech-stack">
-          <div className="inline-block pt-12">
-            <h2 className={title()}>Tech Stack</h2>
+          <div className="mt-3 mb-12">
+            <TechStack />
           </div>
-        </div>
 
-        <div className="mt-3 mb-12">
-          <TechStack />
-        </div>
-
-        {/* Projects */}
-        <div className="text-left" id = "projects">
-          <div className="inline-block pt-12">
-            <h2 className={title()}>Projects</h2>
+          {/* Projects */}
+          <div className="text-left" id="projects">
+            <div className="inline-block pt-12">
+              <h2 className={title()}>Projects</h2>
+            </div>
           </div>
-        </div>
 
-        <div className="mt-3 mb-12">
-          <Projects />
-        </div>
-
-        {/* Contact */}
-        <div className="text-left" id = "projects">
-          <div className="inline-block pt-12">
-            <h2 className={title()}>Contact Me</h2>
+          <div className="mt-3 mb-12">
+            <Projects />
           </div>
-        </div>
 
-        <div className="mt-3 mb-12">
-          <ContactForm />
-        </div>
+          {/* Contact */}
+          <div className="text-left" id="contact">
+            <div className="inline-block pt-12">
+              <h2 className={title()}>Contact Me</h2>
+            </div>
+          </div>
 
-      </div>
-    </section>
+          <div className="mt-3 mb-12">
+            <ContactForm />
+          </div>
+
+        </div>
+      </section>
+    </>
   );
 }
