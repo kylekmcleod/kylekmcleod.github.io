@@ -6,16 +6,15 @@ import { GithubIcon, LinkedinIcon } from "@/components/icons";
 import Projects from "@/components/projects";
 import TechStack from "@/components/techStack";
 import ContactForm from "@/components/contact";
+
 export default function Home() {
   return (
     <>
       <section className="flex flex-col md:flex-row items-center justify-center gap-4">
         <div className="w-full px-4">
           {/* Introduction */}
-          <div className="relative min-h-[calc(100vh-150px)] bg-base-200 text-center flex items-center justify-center mb-20">
-          <div className="relative z-10 inline-block"> 
-
-
+          <div className="relative min-h-[calc(100vh-150px)] bg-base-200 text-center flex items-center justify-center mb-32">
+            <div className="relative z-10 inline-block"> 
               <h1 className={title()}>Hey, I&apos;m&nbsp;</h1>
               <h1 className={title({ color: "blue" })}>Kyle McLeod.&nbsp;</h1>
               <br />
@@ -45,38 +44,34 @@ export default function Home() {
           </div>
 
           {/* Tech Stack */}
-          <div className="text-left" id="tech-stack">
+          <div className="text-left mb-24" id="tech-stack">
             <div className="inline-block pt-12">
               <h2 className={title()}>Tech Stack</h2>
             </div>
-          </div>
-
-          <div className="mt-3 mb-12">
-            <TechStack />
+            <div className="mt-8">
+              <TechStack />
+            </div>
           </div>
 
           {/* Projects */}
-          <div className="text-left" id="projects">
-            <div className="inline-block pt-12">
+          <div className="text-left mb-24" id="projects">
+            <div className="inline-block pt-24">
               <h2 className={title()}>Projects</h2>
             </div>
-          </div>
-
-          <div className="mt-3 mb-12">
-            <Projects />
+            <div className="mt-8">
+              <Projects />
+            </div>
           </div>
 
           {/* Contact */}
-          <div className="text-left" id="contact">
+          <div className="text-left mb-24" id="contact">
             <div className="inline-block pt-12">
               <h2 className={title()}>Contact Me</h2>
             </div>
+            <div className="mt-8">
+              <ContactForm />
+            </div>
           </div>
-
-          <div className="mt-3 mb-12">
-            <ContactForm />
-          </div>
-
         </div>
       </section>
     </>
