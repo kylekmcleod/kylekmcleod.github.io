@@ -1,3 +1,6 @@
+"use client";
+import { useEffect, useRef, useState } from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
 import { Link } from "@nextui-org/link";
 import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
@@ -8,10 +11,18 @@ import TechStack from "@/components/techStack";
 import ContactForm from "@/components/contact";
 
 export default function Home() {
+  const techStackRef = useRef(null);
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
+
+  const techStackInView = useInView(techStackRef, { once: true });
+  const projectsInView = useInView(projectsRef, { once: true });
+  const contactInView = useInView(contactRef, { once: true });
+
   return (
     <>
-      <section className="flex flex-col md:flex-row items-center justify-center gap-4">
-        <div className="w-full px-4">
+      <section className="relative flex flex-col md:flex-row items-center justify-center gap-4">
+        <div className="w-full px-4 relative z-10">
           {/* Introduction */}
           <div className="relative min-h-[calc(100vh-150px)] bg-base-200 text-center flex items-center justify-center mb-32">
             <div className="relative z-10 inline-block"> 
@@ -44,9 +55,15 @@ export default function Home() {
           </div>
 
           {/* Tech Stack */}
-          <div className="text-left mb-24" id="tech-stack">
+          <div className="text-left mb-24" id="tech-stack" ref={techStackRef}>
             <div className="inline-block pt-12">
               <h2 className={title()}>Tech Stack</h2>
+              <motion.div
+                className="w-24 h-1 bg-blue-500 mt-4"
+                initial={{ width: 0 }}
+                animate={{ width: techStackInView ? "100px" : 0 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+              />
             </div>
             <div className="mt-8">
               <TechStack />
@@ -54,9 +71,15 @@ export default function Home() {
           </div>
 
           {/* Projects */}
-          <div className="text-left mb-24" id="projects">
+          <div className="text-left mb-24" id="projects" ref={projectsRef}>
             <div className="inline-block pt-24">
               <h2 className={title()}>Projects</h2>
+              <motion.div
+                className="w-24 h-1 bg-blue-500 mt-4"
+                initial={{ width: 0 }}
+                animate={{ width: projectsInView ? "100px" : 0 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+              />
             </div>
             <div className="mt-8">
               <Projects />
@@ -64,9 +87,15 @@ export default function Home() {
           </div>
 
           {/* Contact */}
-          <div className="text-left mb-24" id="contact">
+          <div className="text-left mb-24" id="contact" ref={contactRef}>
             <div className="inline-block pt-12">
               <h2 className={title()}>Contact Me</h2>
+              <motion.div
+                className="w-24 h-1 bg-blue-500 mt-4"
+                initial={{ width: 0 }}
+                animate={{ width: contactInView ? "100px" : 0 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+              />
             </div>
             <div className="mt-8">
               <ContactForm />
