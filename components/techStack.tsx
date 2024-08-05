@@ -1,5 +1,8 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
+import { useInView } from "framer-motion";
 import { Snippet } from "@nextui-org/snippet";
+import { motion } from "framer-motion";
 import {
   FaWindows,
   FaJava,
@@ -28,29 +31,32 @@ import {
 export default function TechStack() {
   return (
     <div className="flex flex-wrap">
-      <TechStackButton label="Windows" />
-      <TechStackButton label="Java" />
-      <TechStackButton label="Python" />
-      <TechStackButton label="JavaScript" />
-      <TechStackButton label="TypeScript" />
-      <TechStackButton label="HTML" />
-      <TechStackButton label="CSS" />
-      <TechStackButton label="Node.js" />
-      <TechStackButton label="Express.js" />
-      <TechStackButton label="React" />
-      <TechStackButton label="Next.js" />
-      <TechStackButton label="MongoDB" />
-      <TechStackButton label="MySQL" />
-      <TechStackButton label="VS Code" />
-      <TechStackButton label="Eclipse" />
-      <TechStackButton label="Git" />
-      <TechStackButton label="Docker" />
-      <TechStackButton label="Google Cloud" />
-      <TechStackButton label="Figma" />
-      <TechStackButton label="Postman" />
+      {techStackItems.map((item, index) => (
+        <AnimatedTechStackButton
+          key={item.label}
+          label={item.label}
+          index={index}
+        />
+      ))}
     </div>
   );
 }
+
+const AnimatedTechStackButton = ({ label, index }: { label: string, index: number }) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, x: -30 }}
+      animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : -30 }}
+      transition={{ delay: index * 0.1, duration: 0.5 }}
+    >
+      <TechStackButton label={label} />
+    </motion.div>
+  );
+};
 
 const TechStackButton = ({ label }: { label: string }) => (
   <Snippet
@@ -65,6 +71,29 @@ const TechStackButton = ({ label }: { label: string }) => (
     </span>
   </Snippet>
 );
+
+const techStackItems = [
+  { label: "Windows" },
+  { label: "Java" },
+  { label: "Python" },
+  { label: "JavaScript" },
+  { label: "TypeScript" },
+  { label: "HTML" },
+  { label: "CSS" },
+  { label: "Node.js" },
+  { label: "Express.js" },
+  { label: "React" },
+  { label: "Next.js" },
+  { label: "MongoDB" },
+  { label: "MySQL" },
+  { label: "VS Code" },
+  { label: "Eclipse" },
+  { label: "Git" },
+  { label: "Docker" },
+  { label: "Google Cloud" },
+  { label: "Figma" },
+  { label: "Postman" }
+];
 
 const icons: { [key: string]: JSX.Element } = {
   Windows: <FaWindows className="text-xs sm:text-lg" />,
