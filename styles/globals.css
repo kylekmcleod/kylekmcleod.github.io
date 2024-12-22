@@ -3,3 +3,9 @@
 @tailwind utilities;
 
 
+@media (prefers-color-scheme: dark) {
+    body {
+      --background-color: #1a1a1a; /* Example dark mode background color */
+      --text-color: #ffffff; /* Example dark mode text color */
+    }
+  }
