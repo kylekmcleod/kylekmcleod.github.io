@@ -30,9 +30,8 @@ export const siteConfig = {
     canonicalUrl: "https://kylekmcleod.github.io",
     openGraph: {
       title: "Kyle McLeod | Software Developer",
-      description:
-        "I'm Kyle McLeod, a software developer. Explore my work in web development, AI, and more.",
-      image: "../public/images/banner.png",
+      description: "I'm Kyle McLeod, a software developer. Explore my work in web development, AI, and more.",
+      image: "https://kylekmcleod.github.io/images/banner.png",
       url: "https://kylekmcleod.github.io",
       type: "website",
       locale: "en_US",
