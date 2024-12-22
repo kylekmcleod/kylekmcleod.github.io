@@ -32,7 +32,7 @@ export const siteConfig = {
       title: "Kyle McLeod | Software Developer",
       description:
         "I'm Kyle McLeod, a software developer. Explore my work in web development, AI, and more.",
-      image: "/images/og-image.jpg",
+      image: "../public/images/banner.png",
       url: "https://kylekmcleod.github.io",
       type: "website",
       locale: "en_US",
