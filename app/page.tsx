@@ -69,9 +69,9 @@ export default function Home() {
             </div>
 
             {/* Video Text and Video */}
-            <div className="w-full text-center mb-32">
+            <div className="w-full text-center mb-32 relative">
               <motion.p
-              className="text-4xl mb-4"
+              className="text-4xl font-light mb-4"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
@@ -79,14 +79,16 @@ export default function Home() {
               I make <span className="font-bold text-blue-400">aesthetically</span><br /> <span className="font-bold text-blue-400">pleasing</span> software.
             </motion.p>
 
-            <motion.p
-              className="text-l mb-12 text-gray-300 mx-auto"
+            <motion.h2
+              className={subtitle({ class: "mt-4 mb-12 font-light"})}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.5 }}
             >
-              Take a look at my project demo below for my app called <span className="font-bold text-white">Song Separator</span>.
-            </motion.p>
+              Take a look at my project demo below for my app called <span className="font-bold">Song Separator</span>.
+            </motion.h2>
+
+            
 
 
               <video
