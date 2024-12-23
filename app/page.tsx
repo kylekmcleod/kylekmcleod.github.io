@@ -39,11 +39,12 @@ export default function Home() {
             {/* Introduction */}
             <div className="relative min-h-[calc(100vh-150px)] bg-base-200 text-center flex items-center justify-center mb-32">
               <div className="relative z-10 inline-block"> 
-                <h1 className={title()}>Hey, I&apos;m&nbsp;</h1>
-                <h1 className={title({ color: "blue" })}>Kyle McLeod.&nbsp;</h1>
+              <h1 className={title()}>Hey, I&apos;m&nbsp;</h1>
+              <h1 className={title({ color: "blue" })}>Kyle McLeod.&nbsp;</h1>
+
                 <br />
                 <h2 className={subtitle({ class: "mt-4" })}>
-                  I am a computer science student at UBCO and am striving to become a software developer.
+                  I am a computer science student at UBCO with a focus on software development, and I have a strong passion for both video and music production.
                 </h2>
                 <div className="flex gap-3 mt-4 justify-center">
                   <Link
@@ -66,6 +67,41 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+            {/* Video Text and Video */}
+            <div className="w-full text-center mb-32">
+              <motion.p
+              className="text-4xl mb-4"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+            >
+              I make <span className="font-bold text-blue-400">aesthetically</span><br /> <span className="font-bold text-blue-400">pleasing</span> software.
+            </motion.p>
+
+            <motion.p
+              className="text-l mb-12 text-gray-300 mx-auto"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.5 }}
+            >
+              Take a look at my project demo below for my app called <span className="font-bold text-white">Song Separator</span>.
+            </motion.p>
+
+
+              <video
+                className="w-full mx-auto"
+                controls
+                autoPlay
+                loop
+                muted
+              >
+                <source src="/video/SongSeparatorDemo.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            
 
             {/* Tech Stack */}
             <div className="text-left mb-24" id="tech-stack" ref={techStackRef}>

@@ -33,9 +33,6 @@ export const Footer = () => {
           ))}
         </ul>
       </div>
-    <div className="mt-4 text-gray-500 text-center text-xs xs:text-xs sm:text-xs md:text-sm lg:text-md">
-        <p>&copy; {new Date().getFullYear()} Kyle McLeod. All rights reserved.</p>
-    </div>
 
     </footer>
   );
