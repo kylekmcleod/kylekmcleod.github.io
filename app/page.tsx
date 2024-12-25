@@ -98,7 +98,7 @@ export default function Home() {
             </motion.p>
 
             <motion.h2
-              className={subtitle({ class: "text-md sm:mt-4 sm:mb-12 font-light" })}
+              className={subtitle({ class: "text-md sm:mt-4 mb-12 font-light" })}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.5 }}
