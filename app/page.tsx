@@ -10,6 +10,7 @@ import Projects from "@/components/projects";
 import TechStack from "@/components/techStack";
 import ContactForm from "@/components/contact";
 import Head from "next/head";
+import Script from "next/script";
 
 export default function Home() {
   const techStackRef = useRef(null);
@@ -33,6 +34,21 @@ export default function Home() {
         <link rel="canonical" href="https://kylekmcleod.github.io/" />
       </Head>
 
+        {/* Google Analytics */}
+        <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-DZEK20PC2K"
+        strategy="afterInteractive"
+      ></Script>
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-DZEK20PC2K');
+        `}
+      </Script>
+      
       <main>
         <section className="relative flex flex-col md:flex-row items-center justify-center gap-4 ">
           <div className="w-full px-4 relative z-10">
