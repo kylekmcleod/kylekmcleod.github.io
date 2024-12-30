@@ -143,7 +143,7 @@ export default function Home() {
             {/* Tech Stack */}
             <div className="text-left mb-24" id="tech-stack" ref={techStackRef}>
               <div className="inline-block pt-12">
-                <h2 className={title()}>Tech Stack</h2>
+                <h3 className={title()}>Tech Stack</h3>
                 <motion.div
                   className="w-24 h-1 bg-blue-500 mt-4"
                   initial={{ width: 0 }}
@@ -159,7 +159,7 @@ export default function Home() {
             {/* Projects */}
             <div className="text-left mb-24" id="projects" ref={projectsRef}>
               <div className="inline-block pt-24">
-                <h2 className={title()}>Projects</h2>
+                <h3 className={title()}>Projects</h3>
                 <motion.div
                   className="w-24 h-1 bg-blue-500 mt-4"
                   initial={{ width: 0 }}
@@ -175,7 +175,7 @@ export default function Home() {
             {/* Contact */}
             <div className="text-left mb-24" id="contact" ref={contactRef}>
               <div className="inline-block pt-12">
-                <h2 className={title()}>Contact Me</h2>
+                <h3 className={title()}>Contact Me</h3>
                 <motion.div
                   className="w-24 h-1 bg-blue-500 mt-4"
                   initial={{ width: 0 }}

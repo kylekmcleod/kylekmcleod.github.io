@@ -33,7 +33,7 @@ const AnimatedProjectCard = ({ project, index }: { project: Project, index: numb
     >
       <a href={project.link} target="_blank" rel="noreferrer" className="relative group">
         <div className="flex flex-col justify-center h-full">
-          <h3 className="font-medium text-lg">{project.title}</h3>
+          <h4 className="font-medium text-lg">{project.title}</h4>
           <p className="text-sm uppercase font-bold mb-2 text-gray-500">{project.subtitle}</p>
           <Card className="w-full">
             <div className="relative w-full h-full">
