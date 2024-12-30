@@ -55,7 +55,7 @@ export default function Home() {
           {/* Introduction */}
           <div className="relative min-h-[calc(100vh-150px)] bg-base-200 text-center flex items-center justify-center mb-32">
             <div className="relative z-10 inline-block">
-              <h1 className={title()}>Hey, I&apos;m&nbsp;</h1>
+              <h2 className={title()}>Hey, I&apos;m&nbsp;</h2>
               <h1 className={title({ color: "blue" })}>Kyle McLeod.&nbsp;</h1>
               <br />
               <h2 className={subtitle({ class: "mt-4" })}>
