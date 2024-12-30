@@ -1,8 +1,8 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Kyle McLeod",
-  description: "I'm Kyle McLeod, a software developer with a focus on web development, AI, and machine learning. Take a look at my portfolio and feel free to reach out to me for tech related inquiries.",
+  name: "Kyle McLeod | Software Developer",
+  description: "I'm Kyle McLeod, a software developer with a focus on web development, AI, and machine learning. Take a look at my portfolio and feel free to reach out to me.",
   navItems: [
   ],
   navMenuItems: [],
