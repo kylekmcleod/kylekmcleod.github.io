@@ -8,7 +8,9 @@ export const Footer = () => {
       <div className="flex flex-col md:flex-row justify-between w-full">
         <div className="flex flex-col items-left md:items-start">
           <p className="font-bold text-lg mb-2">KYLE MCLEOD</p>
-          <p className="text-sm max-w-xs text-gray-500">kylekmcleod1@gmail.com</p>
+          <a href="mailto:kylekmcleod1@gmail.com" className="text-sm text-gray-500 hover:text-gray-700">
+            kylekmcleod1@gmail.com
+          </a>
         </div>
         <div className="flex gap-4 mt-4 md:mt-0">
           <Link isExternal aria-label="Github" href={siteConfig.links.github}>
@@ -21,7 +23,7 @@ export const Footer = () => {
       </div>
       <div className="mt-4 w-full">
         <ul className="flex justify-left gap-4">
-          {siteConfig.navItems.map((item) => (
+          {siteConfig.navItems.map((item: { href: string, label: string }) => (
             <li key={item.href}>
               <Link
                 className="text-sm text-gray-600 hover:text-gray-800"
