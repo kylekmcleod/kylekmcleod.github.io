@@ -37,12 +37,13 @@ const AnimatedProjectCard = ({ project, index }: { project: Project, index: numb
           <p className="text-sm uppercase font-bold mb-2 text-gray-500">{project.subtitle}</p>
           <Card className="w-full">
             <div className="relative w-full h-full">
-              <Image
-                removeWrapper
-                alt="Card background"
-                className="z-0 w-full h-full object-cover"
-                src={project.imageSrc}
-              />
+            <Image
+              removeWrapper
+              alt={project.altText}
+              className="z-0 w-full h-full object-cover"
+              src={project.imageSrc}
+            />
+
               <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
           </Card>
@@ -57,31 +58,36 @@ const projects = [
     title: "Paper Trading App",
     subtitle: "Invest with zero risk",
     link: "https://github.com/kylekmcleod",
-    imageSrc: "/images/paperTrader.png"
+    imageSrc: "/images/paperTrader.png",
+    altText: "Screenshot of the Paper Trading App interface"
   },
   {
     title: "Algorithmic Stock Trading",
     subtitle: "Machine Learning Practice",
     link: "https://github.com/kylekmcleod/Algorithmic-Trading-Learning",
-    imageSrc: "/images/algTrading.png"
+    imageSrc: "/images/algTrading.png",
+    altText: "Visualization of algorithmic trading process"
   },
   {
-    title: "Song Seperator",
+    title: "Song Separator",
     subtitle: "AI Music Splitter",
     link: "https://github.com/kylekmcleod/Song-Seperator",
-    imageSrc: "/images/songSeperator.png"
+    imageSrc: "/images/songSeperator.png",
+    altText: "Interface of the Song Separator application"
   },
   {
     title: "Ticket Apprentice",
     subtitle: "Event ticketing software",
     link: "https://github.com/kylekmcleod/Ticket-Apprentice",
-    imageSrc: "/images/ticketApprentice.png"
+    imageSrc: "/images/ticketApprentice.png",
+    altText: "Dashboard of Ticket Apprentice ticketing software"
   },
   {
     title: "Time Piece Vault",
     subtitle: "E-commerce watch store",
     link: "https://github.com/kylekmcleod/E-Commerce-Watch-Store",
-    imageSrc: "/images/timePieceVault.png"
+    imageSrc: "/images/timePieceVault.png",
+    altText: "E-commerce website for luxury watches"
   }
 ];
 
@@ -90,4 +96,5 @@ type Project = {
   subtitle: string;
   link: string;
   imageSrc: string;
+  altText: string;
 };
