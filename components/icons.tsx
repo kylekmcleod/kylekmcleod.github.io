@@ -126,7 +126,6 @@ export const LinkedinIcon: React.FC<IconSvgProps> = ({
   );
 };
 
-
 export const MoonFilledIcon = ({
   size = 24,
   width,

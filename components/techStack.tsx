@@ -14,7 +14,7 @@ import {
   FaReact,
   FaDocker,
   FaGitAlt,
-  FaGoogle
+  FaGoogle,
 } from "react-icons/fa";
 import {
   SiTypescript,
@@ -25,7 +25,7 @@ import {
   SiFigma,
   SiPostman,
   SiNextdotjs,
-  SiExpress
+  SiExpress,
 } from "react-icons/si";
 
 export default function TechStack() {
@@ -42,7 +42,13 @@ export default function TechStack() {
   );
 }
 
-const AnimatedTechStackButton = ({ label, index }: { label: string, index: number }) => {
+const AnimatedTechStackButton = ({
+  label,
+  index,
+}: {
+  label: string;
+  index: number;
+}) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -64,7 +70,7 @@ const TechStackButton = ({ label }: { label: string }) => (
     symbol=""
     variant="bordered"
     className="py-2 px-3 mt-2 transition-transform duration-200 ease-in-out transform hover:scale-105 hover:text-blue-500 hover:border-blue-500 cursor-default"
-    style={{ marginRight: '4px', marginLeft: '4px' }}
+    style={{ marginRight: "4px", marginLeft: "4px" }}
   >
     <span className="flex items-center text-xs sm:text-base">
       {icons[label]} <span className="ml-2">{label}</span>
@@ -92,7 +98,7 @@ const techStackItems = [
   { label: "Docker" },
   { label: "Google Cloud" },
   { label: "Figma" },
-  { label: "Postman" }
+  { label: "Postman" },
 ];
 
 const icons: { [key: string]: JSX.Element } = {
@@ -103,17 +109,17 @@ const icons: { [key: string]: JSX.Element } = {
   TypeScript: <SiTypescript className="text-xs sm:text-lg" />,
   HTML: <FaHtml5 className="text-xs sm:text-lg" />,
   CSS: <FaCss3Alt className="text-xs sm:text-lg" />,
-  'Node.js': <FaNodeJs className="text-xs sm:text-lg" />,
+  "Node.js": <FaNodeJs className="text-xs sm:text-lg" />,
   React: <FaReact className="text-xs sm:text-lg" />,
-  'Next.js': <SiNextdotjs className="text-xs sm:text-lg" />,
+  "Next.js": <SiNextdotjs className="text-xs sm:text-lg" />,
   MongoDB: <SiMongodb className="text-xs sm:text-lg" />,
   MySQL: <SiMysql className="text-xs sm:text-lg" />,
-  'VS Code': <SiVisualstudiocode className="text-xs sm:text-lg" />,
+  "VS Code": <SiVisualstudiocode className="text-xs sm:text-lg" />,
   Eclipse: <SiEclipseide className="text-xs sm:text-lg" />,
   Git: <FaGitAlt className="text-xs sm:text-lg" />,
   Docker: <FaDocker className="text-xs sm:text-lg" />,
-  'Google Cloud': <FaGoogle className="text-xs sm:text-lg" />,
+  "Google Cloud": <FaGoogle className="text-xs sm:text-lg" />,
   Figma: <SiFigma className="text-xs sm:text-lg" />,
   Postman: <SiPostman className="text-xs sm:text-lg" />,
-  'Express.js': <SiExpress className="text-xs sm:text-lg" />
+  "Express.js": <SiExpress className="text-xs sm:text-lg" />,
 };

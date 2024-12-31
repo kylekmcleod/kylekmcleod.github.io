@@ -27,7 +27,6 @@ import {
 } from "@/components/icons";
 
 export const Navbar = () => {
-
   return (
     <NextUINavbar maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
@@ -62,7 +61,11 @@ export const Navbar = () => {
           <Link isExternal aria-label="Github" href={siteConfig.links.github}>
             <GithubIcon className="text-default-500" />
           </Link>
-          <Link isExternal aria-label="LinkedIn" href={siteConfig.links.linkedin}>
+          <Link
+            isExternal
+            aria-label="LinkedIn"
+            href={siteConfig.links.linkedin}
+          >
             <LinkedinIcon className="text-default-500" />
           </Link>
           <ThemeSwitch />

@@ -20,7 +20,8 @@ export default function SchoolProgress() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 1.2 }}
         >
-          <span className="font-light">CS Student @ The</span> University <span className="font-light">of</span> British Columbia
+          <span className="font-light">CS Student @ The</span> University{" "}
+          <span className="font-light">of</span> British Columbia
         </motion.h2>
 
         {/* Fade-in effect for the progress bar */}
@@ -49,14 +50,16 @@ export default function SchoolProgress() {
 
       {/* Right Section: Additional Info */}
       <div className="text-left font-light">
-
         <motion.p
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 1.2 }}
         >
-          I'm currently in my 4th year at The University of British Columbia and am pursuing a degree in Computer Science. I'm expected to graduate in May 2026. My studies have been focused on software development, machine learning, and data science.
+          I&apos;m currently in my 4th year at The University of British Columbia and
+          am pursuing a degree in Computer Science. I&apos;m expected to graduate in
+          May 2026. My studies have been focused on software development,
+          machine learning, and data science.
         </motion.p>
 
         <motion.p

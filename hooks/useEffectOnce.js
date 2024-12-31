@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef } from "react";
 
 const useEffectOnce = (effect) => {
   const effectFn = useRef(effect);
