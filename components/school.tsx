@@ -14,7 +14,7 @@ export default function SchoolProgress() {
       <div className="flex flex-col">
         {/* Fade-in effect for the university name */}
         <motion.h2
-          className="text-2xl sm:text-3xl font-bold mb-4"
+          className="text-3xl sm:text-4xl font-bold mb-4"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.2 }}
