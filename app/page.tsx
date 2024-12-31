@@ -59,7 +59,7 @@ export default function Home() {
           <div className="w-full px-4 relative z-10">
             {/* Introduction */}
             <div className="relative min-h-[calc(100vh-150px)] bg-base-200 text-center flex items-center justify-center mb-32">
-              <div className="relative z-10 inline-block">
+              <div className="relative z-20 inline-block">
                 <h2 className={title()}>Hey, I&apos;m&nbsp;</h2>
                 <h1 className={title({ color: "blue" })}>Kyle McLeod.&nbsp;</h1>
                 <br />
