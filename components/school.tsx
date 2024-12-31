@@ -56,9 +56,9 @@ export default function SchoolProgress() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 1.2 }}
         >
-          I&apos;m currently in my 4th year at The University of British Columbia and
-          am pursuing a degree in Computer Science. I&apos;m expected to graduate in
-          May 2026. My studies have been focused on software development,
+          I&apos;m currently in my 4th year at The University of British Columbia,
+          pursuing a degree in Computer Science. I&apos;m expected to graduate in
+          May 2026 and my studies focus on software development,
           machine learning, and data science.
         </motion.p>
 
