@@ -11,6 +11,7 @@ import TechStack from "@/components/techStack";
 import ContactForm from "@/components/contact";
 import Head from "next/head";
 import Script from "next/script";
+import SchoolProgress from "@/components/school";
 
 export default function Home() {
   const techStackRef = useRef(null);
@@ -138,8 +139,7 @@ export default function Home() {
               </video>
             </div>
 
-            
-
+            <SchoolProgress />
             {/* Tech Stack */}
             <div className="text-left mb-24" id="tech-stack" ref={techStackRef}>
               <div className="inline-block pt-12">
