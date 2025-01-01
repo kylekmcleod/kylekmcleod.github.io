@@ -20,7 +20,7 @@ const MediaPage = () => {
         Creative Portfolio
       </h1>
       <p className="text-lg text-default-500 mb-8">
-        Over the course of 6 years, I have worked on a variety of different video related projects. I've had the opportunity to work with a variety of clients across different industries, creating content that not only looks great but also aligns with their goals and strategies. Projects were completed using Adobe Premiere Pro and Adobe After Effects.
+        Over the course of 6 years, I have worked on a variety of different video related projects. I&apos;ve had the opportunity to work with a variety of clients across different industries, creating content that not only looks great but also aligns with their goals and strategies. Projects were completed using Adobe Premiere Pro and Adobe After Effects.
       </p>
 
       <MediaStats />
