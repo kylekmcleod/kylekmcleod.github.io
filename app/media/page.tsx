@@ -4,10 +4,12 @@ import MediaStats from "@/components/mediaStats";
 import React from "react";
 
 const videoUrls = [
-  "https://player.vimeo.com/video/1043202806?badge=0&autopause=0&player_id=0&app_id=58479", // Vimeo video 1
-  "https://player.vimeo.com/video/1043202539?badge=0&autopause=0&player_id=0&app_id=58479", // Vimeo video 2
-  "https://player.vimeo.com/video/1043202772?badge=0&autopause=0&player_id=0&app_id=58479", // Vimeo video 3
-  "https://player.vimeo.com/video/1043202612?badge=0&autopause=0&player_id=0&app_id=58479", // Vimeo video 4
+  "https://player.vimeo.com/video/1043202806?badge=0&autopause=0&player_id=0&app_id=58479",
+  "https://player.vimeo.com/video/1043202539?badge=0&autopause=0&player_id=0&app_id=58479",
+  "https://player.vimeo.com/video/1043202772?badge=0&autopause=0&player_id=0&app_id=58479",
+  "https://player.vimeo.com/video/1043204032?badge=0&autopause=0&player_id=0&app_id=58479",
+  "https://player.vimeo.com/video/1043202612?badge=0&autopause=0&player_id=0&app_id=58479",
+  "https://player.vimeo.com/video/1043202975?badge=0&autopause=0&player_id=0&app_id=58479",
 ];
 
 const MediaPage = () => {
