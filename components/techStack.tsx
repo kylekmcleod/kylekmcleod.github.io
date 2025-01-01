@@ -20,13 +20,14 @@ import {
   SiTypescript,
   SiMongodb,
   SiMysql,
-  SiVisualstudiocode,
   SiEclipseide,
   SiFigma,
   SiPostman,
   SiNextdotjs,
   SiExpress,
 } from "react-icons/si";
+
+import { BiLogoVisualStudio } from "react-icons/bi";
 
 export default function TechStack() {
   return (
@@ -114,7 +115,7 @@ const icons: { [key: string]: JSX.Element } = {
   "Next.js": <SiNextdotjs className="text-xs sm:text-lg" />,
   MongoDB: <SiMongodb className="text-xs sm:text-lg" />,
   MySQL: <SiMysql className="text-xs sm:text-lg" />,
-  "VS Code": <SiVisualstudiocode className="text-xs sm:text-lg" />,
+  "VS Code": <BiLogoVisualStudio className="text-xs sm:text-lg" />, 
   Eclipse: <SiEclipseide className="text-xs sm:text-lg" />,
   Git: <FaGitAlt className="text-xs sm:text-lg" />,
   Docker: <FaDocker className="text-xs sm:text-lg" />,
