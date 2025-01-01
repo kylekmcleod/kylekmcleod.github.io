@@ -26,7 +26,6 @@ import {
   SiNextdotjs,
   SiExpress,
 } from "react-icons/si";
-
 import { BiLogoVisualStudio } from "react-icons/bi";
 
 export default function TechStack() {
@@ -35,21 +34,15 @@ export default function TechStack() {
       {techStackItems.map((item, index) => (
         <AnimatedTechStackButton
           key={item.label}
-          label={item.label}
           index={index}
+          label={item.label}
         />
       ))}
     </div>
   );
 }
 
-const AnimatedTechStackButton = ({
-  label,
-  index,
-}: {
-  label: string;
-  index: number;
-}) => {
+const AnimatedTechStackButton = ({ label, index }: { label: string; index: number }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -115,7 +108,7 @@ const icons: { [key: string]: JSX.Element } = {
   "Next.js": <SiNextdotjs className="text-xs sm:text-lg" />,
   MongoDB: <SiMongodb className="text-xs sm:text-lg" />,
   MySQL: <SiMysql className="text-xs sm:text-lg" />,
-  "VS Code": <BiLogoVisualStudio className="text-xs sm:text-lg" />, 
+  "VS Code": <BiLogoVisualStudio className="text-xs sm:text-lg" />,
   Eclipse: <SiEclipseide className="text-xs sm:text-lg" />,
   Git: <FaGitAlt className="text-xs sm:text-lg" />,
   Docker: <FaDocker className="text-xs sm:text-lg" />,
