@@ -60,9 +60,8 @@ function ContactForm() {
         variant="bordered"
         placeholder="Enter message"
         disableAnimation
-        disableAutosize
         classNames={{
-          input: "resize-y min-h-[80px]",
+          input: "resize-none min-h-[190px]",
         }}
       />
       <ValidationError prefix="Message" field="message" errors={state.errors} />
