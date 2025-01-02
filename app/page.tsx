@@ -46,7 +46,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://kylekmcleod.github.io/images/KyleMcLeodbanner.png" // Explicitly provided URL
+          content="https://kylekmcleod.github.io/images/KyleMcLeodbanner.png"
         />
         <meta property="og:url" content="https://kylekmcleod.github.io/" />
         <meta property="og:type" content="website" />
@@ -58,7 +58,7 @@ export default function Home() {
           name="twitter:description"
           content="I'm Kyle McLeod, a software developer. Explore my work in web development, AI, and more."
         />
-        <meta name="twitter:image" content="https://kylekmcleod.github.io/images/KyleMcLeodbanner.png" />  {/* Explicitly provided URL */}
+        <meta name="twitter:image" content="https://kylekmcleod.github.io/images/KyleMcLeodbanner.png" />
       </Head>
 
 
