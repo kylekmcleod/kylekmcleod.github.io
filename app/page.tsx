@@ -165,7 +165,7 @@ export default function Home() {
                 <span className="font-bold">Song Separator</span>.
               </motion.h2>
 
-              <video className="w-full mx-auto" controls loop muted>
+              <video className="w-full mx-auto" controls loop muted poster="/images/thumbnail.jpg">
                 <source src="/video/SongSeparatorDemo.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
