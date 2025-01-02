@@ -17,7 +17,7 @@ const MediaPage = () => {
     <div className="container mx-auto p-4 pt-20">
       {/* Header */}
       <h1 className="sm:text-6xl text-5xl font-bold text-left text-default-700 mb-4">
-        Creative Portfolio
+        Media Portfolio
       </h1>
       <p className="text-lg text-default-500 mb-8">
         Over the course of 6 years, I have worked on a variety of different video related projects. I&apos;ve had the opportunity to work with a variety of clients across different industries, creating content that not only looks great but also aligns with their goals and strategies. Projects were completed using Adobe Premiere Pro and Adobe After Effects.
