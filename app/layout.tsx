@@ -2,7 +2,6 @@ import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 import { Link } from "@nextui-org/link";
 import clsx from "clsx";
-
 import { Providers } from "./providers";
 
 import { siteConfig } from "@/config/site";
@@ -18,6 +17,20 @@ export const metadata: Metadata = {
   description: siteConfig.description,
   icons: {
     icon: "/favicon.ico",
+  },
+  openGraph: {
+    title: "Kyle McLeod | Software Developer",
+    description:
+      "I'm Kyle McLeod, a software developer with a focus on web development, AI, and machine learning. Take a look at my portfolio and feel free to reach out.",
+    images: [
+      {
+        url: "https://kylekmcleod.github.io/images/KyleMcLeodbanner.png",
+        width: 1200,
+        height: 630,
+        type: "image/png",
+      },
+    ],
+    url: "https://kylekmcleod.github.io/",
   },
 };
 
@@ -39,7 +52,7 @@ export default function RootLayout({
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable,
+          fontSans.variable
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
