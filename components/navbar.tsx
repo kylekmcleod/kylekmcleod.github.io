@@ -35,7 +35,7 @@ export const Navbar = () => {
             <p className="font-bold text-inherit">KYLE MCLEOD</p>
           </NextLink>
         </NavbarBrand>
-        <ul className="hidden lg:flex gap-4 justify-start ml-2">
+        <ul className="hidden sm:flex lg:flex gap-4 justify-start ml-2">
           <NavbarItem>
             <NextLink
               className={clsx(
@@ -65,7 +65,7 @@ export const Navbar = () => {
               <NextLink
                 className={clsx(
                   linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium",
+                  "data-[active=true]:text-primary data-[active=true]:font-medium ",
                 )}
                 color="foreground"
                 href={item.href}
