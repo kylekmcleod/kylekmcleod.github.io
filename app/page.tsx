@@ -37,6 +37,25 @@ export default function Home() {
         <meta name="author" content="Kyle McLeod" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="canonical" href="https://kylekmcleod.github.io/" />
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Kyle McLeod | Software Developer" />
+        <meta
+          property="og:description"
+          content="I'm Kyle McLeod, a software developer. Explore my work in web development, AI, and more."
+        />
+        <meta property="og:image" content="/images/KyleMcLeodbanner.png" />
+        <meta property="og:url" content="https://kylekmcleod.github.io/" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Kyle McLeod | Software Developer" />
+        <meta
+          name="twitter:description"
+          content="I'm Kyle McLeod, a software developer. Explore my work in web development, AI, and more."
+        />
+        <meta name="twitter:image" content="/images/KyleMcLeodbanner.png" />
       </Head>
 
       {/* Google Analytics */}
