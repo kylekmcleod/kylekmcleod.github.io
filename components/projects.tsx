@@ -86,7 +86,7 @@ const projects = [
     altText: "Kyle McLeod's Screenshot of the Paper Trading App interface",
     technologies: "Node.js • Next.js • React • MongoDB • Tailwind CSS",
     description:
-      "Practice stock trading risk-free. This web app simulates real market conditions using virtual assets, powered by Node.js, Next.js, and MongoDB. This project is currently in development.",
+      "Practice stock trading risk-free. This web app simulates real market conditions using virtual assets, powered by Node.js, Next.js, and MongoDB.",
   },
   {
     title: "Algorithmic Stock Trading",
