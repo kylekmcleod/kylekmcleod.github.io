@@ -56,10 +56,11 @@ const AnimatedProjectCard = ({
                 className="z-0 w-full h-full object-cover"
                 src={project.imageSrc}
               />
-
               <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
           </Card>
+          <p className="mt-3 text-sm font-bold">{project.technologies}</p>
+          <p className="mt-1 font-light text-default-700 text-md">{project.description}</p>
         </div>
       </a>
     </motion.div>
@@ -68,11 +69,24 @@ const AnimatedProjectCard = ({
 
 const projects = [
   {
+    title: "Song Separator",
+    subtitle: "AI Music Splitter",
+    link: "https://github.com/kylekmcleod/Song-Seperator",
+    imageSrc: "/images/songSeperator.png",
+    altText: "Kyle McLeod's Interface of the Song Separator application",
+    technologies: "Node.js • Express.js • React • Machine Learning • Python",
+    description:
+      "An AI-powered web app that uses machine learning to split songs into vocal, drum, bass, and instrumental layers.",
+  },
+  {
     title: "Paper Trading App",
     subtitle: "Invest with zero risk",
     link: "https://github.com/kylekmcleod",
     imageSrc: "/images/paperTrader.png",
     altText: "Kyle McLeod's Screenshot of the Paper Trading App interface",
+    technologies: "Node.js • Next.js • React • MongoDB • Tailwind CSS",
+    description:
+      "Practice stock trading risk-free. This web app simulates real market conditions using virtual assets, powered by Node.js, Next.js, and MongoDB. This project is currently in development.",
   },
   {
     title: "Algorithmic Stock Trading",
@@ -80,13 +94,9 @@ const projects = [
     link: "https://github.com/kylekmcleod/Algorithmic-Trading-Learning",
     imageSrc: "/images/algTrading.png",
     altText: "Kyle McLeod's Visualization of algorithmic trading process",
-  },
-  {
-    title: "Song Separator",
-    subtitle: "AI Music Splitter",
-    link: "https://github.com/kylekmcleod/Song-Seperator",
-    imageSrc: "/images/songSeperator.png",
-    altText: "Kyle McLeod's Interface of the Song Separator application",
+    technologies: "Python • Pandas • scikit-learn • yfinance",
+    description:
+      "Machine learning project that predicts profitable stocks using historic S&P 500 data. Documented in Jupyter Notebook.",
   },
   {
     title: "Ticket Apprentice",
@@ -94,6 +104,9 @@ const projects = [
     link: "https://github.com/kylekmcleod/Ticket-Apprentice",
     imageSrc: "/images/ticketApprentice.png",
     altText: "Kyle McLeod's Dashboard of Ticket Apprentice ticketing software",
+    technologies: "Node.js • Express.js • MySQL • EJS • Bootstrap",
+    description:
+      "Event ticketing software that allows users to buy and sell tickets for events. Developed using Node.js, Express.js, and MySQL.",
   },
   {
     title: "Time Piece Vault",
@@ -101,6 +114,9 @@ const projects = [
     link: "https://github.com/kylekmcleod/E-Commerce-Watch-Store",
     imageSrc: "/images/timePieceVault.png",
     altText: "Kyle McLeod's E-commerce website for luxury watches",
+    technologies: "Java • MySQL • HTML/CSS",
+    description:
+      "An e-commerce platform for buying and selling luxury watches.",
   },
 ];
 
@@ -110,4 +126,6 @@ type Project = {
   link: string;
   imageSrc: string;
   altText: string;
+  technologies: string;
+  description: string;
 };
