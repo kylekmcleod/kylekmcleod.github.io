@@ -25,11 +25,9 @@ const MediaPage = () => {
 
       <MediaStats />
 
-      {/* 2x2 Grid of Video Boxes with Vimeo Embeds */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 mt-8">
         {videoUrls.map((url, index) => (
           <div key={index} className="relative w-full" style={{ paddingTop: "56.25%" }}>
-            {/* Aspect Ratio Container */}
             <div className="absolute top-0 left-0 w-full h-full">
               <iframe
                 className="w-full h-full"
