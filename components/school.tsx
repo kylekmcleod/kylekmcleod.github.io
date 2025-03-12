@@ -51,7 +51,7 @@ export default function SchoolProgress() {
       {/* Right Section: Additional Info */}
       <div className="text-left font-light">
         <motion.p
-          initial={{ opacity: 0, x: -20 }}
+          initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 1.2 }}
