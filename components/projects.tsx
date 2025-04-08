@@ -7,15 +7,13 @@ import { motion } from "framer-motion";
 
 export default function Projects() {
   return (
-    <div className="w-full mx-auto gap-10 grid grid-cols-1 md:grid-cols-2">
-      {projects.map((project, index) => (
-        <AnimatedProjectCard
-          key={project.link}
-          project={project}
-          index={index}
-        />
-      ))}
-    </div>
+  <div className="w-full mx-auto gap-10 grid grid-cols-1 md:grid-cols-2">
+    {projects.map((project, index) => (
+      <div key={project.link} className={index === projects.length - 1 ? 'mb-0' : ''}>
+        <AnimatedProjectCard project={project} index={index} />
+      </div>
+    ))}
+  </div>
   );
 }
 
@@ -68,6 +66,16 @@ const AnimatedProjectCard = ({
 };
 
 const projects = [
+  {
+    title: "Java AI Agent",
+    subtitle: "The Game of Amazons Player",
+    link: "https://github.com/kylekmcleod/Game-of-Amazons-AI-Agent",
+    imageSrc: "/images/amazons.png",
+    altText: "Kyle McLeod's Screenshot of the Java AI Agent interface",
+    technologies: "Java • Maven",
+    description:
+      "A Monte Carlo Tree Search (MCTS) Java AI agent that plays the Game of the Amazons",
+  },
   {
     title: "Song Separator",
     subtitle: "AI Music Splitter",
