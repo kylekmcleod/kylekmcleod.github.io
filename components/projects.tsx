@@ -74,7 +74,7 @@ const projects = [
     altText: "Kyle McLeod's Screenshot of the Java AI Agent interface",
     technologies: "Java • Maven",
     description:
-      "A Monte Carlo Tree Search (MCTS) Java AI agent that plays the Game of the Amazons",
+      "A Monte Carlo Tree Search (MCTS) Java AI agent that plays the Game of the Amazons.",
   },
   {
     title: "Song Separator",
