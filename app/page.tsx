@@ -87,7 +87,7 @@ export default function Home() {
                 <h1 className={title({ color: "blue" })}>Kyle McLeod.&nbsp;</h1>
                 <br />
                 <h2 className={subtitle({ class: "mt-4" })}>
-                  Software developer, video editor, and music producer.
+                  Computer Science Student at The University of British Columbia
                 </h2>
                 <div className="flex gap-3 mt-4 justify-center">
                   <Link
