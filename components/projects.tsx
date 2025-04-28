@@ -1,8 +1,8 @@
 "use client";
 import React, { useRef } from "react";
 import { useInView } from "framer-motion";
-import { Card } from "@nextui-org/card";
-import { Image } from "@nextui-org/image";
+import { Card } from "@nextui-org/react";
+import { Image } from "@nextui-org/react";
 import { motion } from "framer-motion";
 
 export default function Projects() {

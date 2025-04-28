@@ -9,6 +9,7 @@ import { GithubIcon, LinkedinIcon } from "@/components/icons";
 import Projects from "@/components/projects";
 import TechStack from "@/components/techStack";
 import ContactForm from "@/components/contact";
+import Experience from "@/components/experience";
 import Head from "next/head";
 import Script from "next/script";
 import SchoolProgress from "@/components/school";
@@ -17,8 +18,10 @@ export default function Home() {
   const techStackRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
+  const experienceRef = useRef(null);
 
   const techStackInView = useInView(techStackRef, { once: true });
+  const experienceInView = useInView(experienceRef, { once: true });
   const projectsInView = useInView(projectsRef, { once: true });
   const contactInView = useInView(contactRef, { once: true });
 
@@ -185,6 +188,22 @@ export default function Home() {
               </div>
               <div className="mt-8">
                 <TechStack />
+              </div>
+            </div>
+
+            {/* Experience */}
+            <div className="text-left mb-24" id="tech-stack" ref={experienceRef}>
+              <div className="inline-block pt-12">
+                <h3 className={title()}>Experience</h3>
+                <motion.div
+                  className="w-24 h-1 bg-blue-500 mt-4"
+                  initial={{ width: 0 }}
+                  animate={{ width: experienceInView ? "100px" : 0 }}
+                  transition={{ duration: 1, ease: "easeOut" }}
+                />
+              </div>
+              <div className="mt-8">
+                <Experience />
               </div>
             </div>
 
