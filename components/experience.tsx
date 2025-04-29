@@ -105,7 +105,7 @@ const experience = [
     current: false,
   },
   {
-    jobTitle: 'E-Commerce Web Designer',
+    jobTitle: 'E-Commerce Web Designer & Business Owner',
     company: 'Self-employed',
     location: 'Kelowna, BC',
     startDate: 'Aug. 2020',
