@@ -8,7 +8,7 @@ const Experience: React.FC = () => {
       {experience.map((item, index) => (
         <motion.li
           key={index}
-          className="shadow-lg border-2 border-transparent dark:border-white/20 hover:shadow-xl hover:border-gray-400 dark:hover:border-gray-600 transition-all rounded-xl p-6"
+          className="shadow-lg border-2 border-transparent dark:border-white/25 hover:shadow-xl hover:border-gray-400 dark:hover:border-gray-600 transition-all rounded-xl p-6"
           variants={{
             hidden: { opacity: 0 },
             visible: { opacity: 1 },
