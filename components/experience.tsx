@@ -80,7 +80,7 @@ const Experience: React.FC = () => {
 
 const experience = [
   {
-    jobTitle: 'Full Stack Developer Intern',
+    jobTitle: 'Software Developer Intern',
     company: 'IT Partners Inc.',
     location: 'Kelowna, BC',
     startDate: 'Apr. 2025',
