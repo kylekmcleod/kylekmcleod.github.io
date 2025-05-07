@@ -56,7 +56,7 @@ export default function SchoolProgress() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 1.2 }}
         >
-          I&apos;m <strong>Kyle McLeod</strong>, a fourth-year Computer Science student at the University of British Columbia, and I am expected to graduate in May 2026. My studies focus on software development, machine learning, and data science. I&apos;m currently on the lookout for a 2025 summer internship in Canada or the U.S.
+          I&apos;m <strong>Kyle McLeod</strong>, a fourth-year Computer Science student at the University of British Columbia, and I am expected to graduate in May 2026. My studies focus on software development, machine learning, and data science. I&apos;m currently on the lookout for a 2026 summer internship in Canada or the U.S.
         </motion.p>
 
         <motion.p
