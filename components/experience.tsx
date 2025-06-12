@@ -84,7 +84,7 @@ const experience = [
     company: 'IT Partners Inc.',
     location: 'Kelowna, BC',
     startDate: 'Apr. 2025',
-    endDate: 'Aug. 2025',
+    endDate: 'Oct. 2025',
     description: '',
     points: {},
     skills: '',
