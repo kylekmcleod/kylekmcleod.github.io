@@ -67,6 +67,16 @@ const AnimatedProjectCard = ({
 
 const projects = [
   {
+    title: "Producer Loop Sharing App",
+    subtitle: "Upload, download, collaborate, profit.",
+    link: "https://github.com/kylekmcleod/",
+    imageSrc: "/images/loopSharing.png",
+    altText: "Kyle McLeod's screenshot of the loop sharing app landing page.",
+    technologies: "RELEASING SOON",
+    description:
+      "An all in one platform for music producers to share loops and collaborate.",
+  },
+  {
     title: "Java AI Agent",
     subtitle: "The Game of Amazons Player",
     link: "https://github.com/kylekmcleod/Game-of-Amazons-AI-Agent",
