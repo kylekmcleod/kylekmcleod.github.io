@@ -69,10 +69,10 @@ const projects = [
   {
     title: "Producer Loop Sharing App",
     subtitle: "Upload, download, collaborate, profit.",
-    link: "https://github.com/kylekmcleod/",
+    link: "https://loopsauce.com/",
     imageSrc: "/images/loopSharing.png",
     altText: "Kyle McLeod's screenshot of the loop sharing app landing page.",
-    technologies: "RELEASING SOON",
+    technologies: "EARLY ACCESS",
     description:
       "An all in one platform for music producers to share loops and collaborate.",
   },
